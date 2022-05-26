@@ -1,0 +1,84 @@
+@import 'utils/variables';
+@import 'components/type';
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("../assets/fonts/PPNeueMontreal-Regular.woff") format("woff");
+}
+    
+@font-face {
+    font-family: "PP Neue Montreal";
+    font-weight: bold;
+    src: url("../assets/fonts/PPNeueMontreal-Bold.woff") format("woff");
+}
+    
+@font-face {
+    font-family: "PP Neue Montreal";
+    font-weight: medium;
+    src: url("../assets/fonts/PPNeueMontreal-Medium.woff") format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary); 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    opacity: 70%; 
+}
+
+/*variables*/
+:root{ 
+    --c-bg-pink: #FF3981;
+    --c-bg-orange: #EC6A20;
+    --c-primary: #FFF8F8;
+    --c-secondary: #000;
+    --c-tertiary: #FFE2E2;
+    --c-greylight: #E5E5E5;
+    --c-greymiddle: #A2A2A2;
+    --c-greydark: #5B5B5B;
+}
+
+body{
+    background: rgb(236,106,32);
+    background: linear-gradient(180deg, rgba(236,106,32,1) 0%, rgba(255,57,129,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "PP Neue Montreal";
+    color: var(--c-primary);
+}
+
+
+/*TITLES*/
+.title--big{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title--medium{
+    font-size: 22px;
+}
+
+.title--little{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.p--big{
+    font-weight: bold;
+}
