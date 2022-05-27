@@ -168,12 +168,7 @@ body{
 
 }
 
-/*.bg-intro{
-    background-image: url(../assets/images/vector.svg);
-    background-repeat: no-repeat;
-    background-size: 150% 100%;
-    margin: 0;
-}*/
+
 
 
 .section__benefits{
@@ -226,6 +221,10 @@ body{
         border: 1px solid rgba(255, 248, 248, 0.25);
     }
 
+    .img--mockup{
+        transform: rotate(9deg);
+    }
+
     .p--big{
         margin-top: 51px;
         text-align: center;
@@ -244,7 +243,11 @@ body{
     padding-right: 34px;
 
     .title--little{
-        margin-top: 34px;
+        margin-top: 51px;
+    }
+
+    .img--mockup{
+        transform: rotate(-9deg);
     }
 }
 
@@ -312,4 +315,104 @@ body{
         padding-top: 34px;
         border-top: 1px solid var(--c-primary);
     }
+}
+
+
+/*DEVICES*/
+@media(min-width: 470px){
+    .section__img--circle {
+        background-size: 370px;
+    }
+}
+
+/*tablette*/
+@media(min-width: 768px){
+    .title--big{
+        font-size: 49px;
+    }
+
+    .title--medium{
+        font-size: 31px;
+    }
+
+    .title--little{
+        font-size: 25px;
+    }
+
+    .p--big{
+        font-size: 25px;
+        font-family: "PP Neue Montreal Medium";
+    }
+
+
+   .section__intro{
+        display: flex;
+        align-items: center;
+    }
+
+
+   .bg-intro{
+        background-image: url(../assets/images/vector.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .section__benefits .p--big{
+        width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .section__callToAction{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .p--big{
+            width: 320px;
+        }
+
+        .img--mockup{
+            margin-right: 34px;
+        }
+
+        .section__img--circle {
+            background-image: none;
+        }
+    }
+
+    .section__features{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .section__img{
+            margin-left: 60px;
+        }
+    }
+
+    .section__features--txt{
+        margin-left: 160px;
+    }
+
+    .section__socialProof .p--big{
+        width: 700px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .section__callToAction2{
+        display: flex;
+        align-items: center;
+
+        .img--round{
+            margin-left: 34px;
+        }
+    }
+
+    .section__callToAction2--txt{
+        margin-left: 40px;
+    }
+
 }
