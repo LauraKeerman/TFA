@@ -54,8 +54,12 @@
 }
 
 body{
-    background: rgb(236,106,32);
-    background: linear-gradient(180deg, rgba(236,106,32,1) 0%, rgba(255,57,129,1) 100%);
+    /*background: rgb(236,106,32);
+    background: linear-gradient(180deg, rgba(236,106,32,1) 0%, rgba(255,57,129,1) 100%);*/
+
+    background: rgb(255,95,97);
+    background: linear-gradient(180deg, rgba(255,95,97,1) 0%, rgba(255,79,178,1) 100%);
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -87,6 +91,10 @@ body{
 
 
 /*IMG / ICONS / LOGO*/
+img{
+    overflow: hidden; //même si l'img sort du viewport, le scroll ne s'affiche pas 
+}
+
 .img--round{
     border-radius: 65px;
 }
@@ -161,7 +169,7 @@ body{
     }
 
     p{
-        margin-bottom: 34px;
+        margin-bottom: 51px;
     }
 
     .img--round{
@@ -304,9 +312,13 @@ body{
 .footer{
     margin-top: 51px;
 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
     &__ul{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -329,7 +341,7 @@ body{
     }
 }
 
-/*tablette*/
+/*tablette & desktop*/
 @media(min-width: 768px){
     /*TITLES*/
     .title--big{
@@ -385,15 +397,16 @@ body{
 
         p{
             margin-bottom: 34px;
+            margin-right: 60px;
         }
     }
 
 
-   .bg-intro{
+   /*.bg-intro{
         background-image: url(../assets/images/vector.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-    }
+    }*/
 
 
 
@@ -519,4 +532,30 @@ body{
         margin-left: 40px;
     }
 
+}
+
+@media(min-width: 768px) and (max-width: 810px){
+    .btn-container {
+        display: flex;
+    }
+}
+
+@media(min-width: 524px) and (max-width: 767px){
+    .section__intro--txt {
+        max-width: 455px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__features--txt {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__benefits .title--big, .section__benefits .p--big {
+        max-width: 485px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
