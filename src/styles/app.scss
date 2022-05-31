@@ -45,8 +45,8 @@
 :root{ 
     --c-bg-pink: #FF3981;
     --c-bg-orange: #EC6A20;
-    --c-primary: #FFF8F8;
-    --c-secondary: #000;
+    --c-primary: #000;
+    --c-secondary: #FFF8F8;
     --c-tertiary: #FFE2E2;
     --c-greylight: #E5E5E5;
     --c-greymiddle: #A2A2A2;
@@ -103,7 +103,7 @@ img{
 .img--mockup{
     width: 200px;
     margin: 0 auto;
-    border: 6px solid var(--c-secondary);
+    border: 6px solid var(--c-primary);
     border-radius: 25px;
 }
 
@@ -188,8 +188,8 @@ img{
     padding-bottom: 119px;
     padding-left: 34px;
     padding-right: 34px;
-    background-color: var(--c-primary);
-    color: var(--c-secondary);
+    background-color: var(--c-secondary);
+    color: var(--c-primary);
     text-align: center;
 
 
@@ -229,7 +229,7 @@ img{
         left: 707px;
         top: 2056px;
 
-        background: linear-gradient(180deg, #EC6A20 0%, #FF3981 100%);
+        background: linear-gradient(180deg, rgba(255,95,97,1) 0%, rgba(255,79,178,1) 100%);
         border: 1px solid rgba(255, 248, 248, 0.25);
     }
 
@@ -246,7 +246,7 @@ img{
 
 .section__features{  
     background-color: var(--c-tertiary);
-    color: var(--c-secondary);
+    color: var(--c-primary);
 
     margin: 0;
     padding-top: 119px;
@@ -276,8 +276,8 @@ img{
     padding-left: 34px;
     padding-right: 34px;
 
-    background-color: var(--c-primary);
-    color: var(--c-secondary);
+    background-color: var(--c-secondary);
+    color: var(--c-primary);
 
     .p--big{
         margin-bottom: 34px;

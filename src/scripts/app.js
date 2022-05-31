@@ -26,7 +26,7 @@ if(window.matchMedia('(max-width: 767px)').matches){
 
 
 if(window.matchMedia('(min-width: 768px)').matches){
-    const tl = gsap.timeline({ defaults: {duration: 3}});
+    const tl2 = gsap.timeline({ defaults: {duration: 3}});
     tl.from('.h1-intro', {
         x: -1000,
         duration: 0.7,
