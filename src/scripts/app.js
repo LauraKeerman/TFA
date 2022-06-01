@@ -43,3 +43,52 @@ if(window.matchMedia('(min-width: 768px)').matches){
         duration: 0.6,
     }, "="); 
 }
+
+
+//Slider
+//Inspiré par https://www.w3schools.com/howto/howto_js_slideshow.asp et modifié
+var slideIndex = 1;
+showSlides(slideIndex);
+
+let prevButton = document.querySelector(".slideshow__prev");
+if(prevButton){
+    prevButton.addEventListener('click', () => {
+        plusSlides(-1);
+    });
+}
+
+let nextButton = document.querySelector(".slideshow__next");
+if(nextButton){
+    nextButton.addEventListener('click', () => {
+        plusSlides(1);
+    });
+}
+
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.querySelectorAll(".slideshow__slides");
+    if (n > slides.length) {
+        slideIndex = 1;
+    } 
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.add("hide");
+    }
+
+    slides[slideIndex-1].classList.remove("hide"); 
+}
