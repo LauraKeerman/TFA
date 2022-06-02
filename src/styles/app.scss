@@ -79,6 +79,7 @@ body{
 .title--little{
     font-size: 17px;
     font-weight: bold;
+    margin-bottom: 8.5px;
 }
 
 .p--big{
@@ -115,6 +116,15 @@ img{
 .img__content{
     width: 100%;
 }
+
+.img__caption{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 8.5px;
+    margin-bottom: 51px;
+    font-family: "PP Neue Montreal Medium";
+}
+
 
 
 .section__img{
@@ -184,6 +194,10 @@ img{
 
 .link--hover:hover{
     border-bottom: 1.5px solid var(--c-primary);
+}
+
+.link--caption{
+    font-family: "PP Neue Montreal Bold";
 }
 
 
@@ -427,7 +441,7 @@ img{
 
 .section__cs--professionnels{
     margin-bottom: 0;
-    background: rgb(255, 95, 97);
+    background-color: #ff8182;
     padding-top: 51px;
     padding-bottom: 51px;
     border-radius: 25px 0 25px 0;
@@ -494,10 +508,14 @@ img{
     .list{
         margin-bottom: 51px;
     }
+
+    .img__content-scroll{
+        height: 45vh;
+    }
 }
 
 .section__cs--contenuApp{
-    background-color: var(--c-bg-pink);
+    background-color: #ff79c4;
     margin: 0;
     padding-left: 34px;
     padding-right: 34px;
@@ -544,7 +562,7 @@ img{
     }
 
     .slideshow__prev, .slideshow__next{
-        top: 85%;
+        top: 77%;
         color: var(--c-primary);
     }
 }
@@ -574,6 +592,85 @@ img{
 .hide{
     display: none;
 }
+
+
+.section__cs--identite{
+    .p--list, .list li{
+        margin-bottom: 8.5px;
+    } 
+
+    .title--little{
+        margin-top: 51px;
+    }
+
+    .img__content{
+        width: 100%;
+    }
+
+    .span{
+        font-family: "PP Neue Montreal Bold";
+    }
+}
+
+
+.section__cs--identite2{
+    .img__content{
+        width: 100%;
+    }
+
+    background-color: #FFE2E2;
+    border-radius: 25px 0 0 0;
+
+    margin: 0;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 119px;
+    padding-bottom: 119px;
+
+    .content__scroll{
+        margin-bottom: 0;
+    }
+
+    .content__scroll .img__content{
+        height: 25vh;
+        width: auto;
+    }
+
+    .content__scroll .img__caption{
+        margin-bottom: 17px;
+    }
+}
+
+
+
+.section__cs--prototype{
+    .content__scroll .img__content{
+        height: 50vh;
+        width: auto;
+    }
+
+    .img__caption{
+        margin-bottom: 17px;
+    }
+}
+
+
+
+
+
+.section__cs--ameliorer{
+    background-color: var(--c-tertiary);
+    padding-top: 119px;
+    padding-bottom: 119px;
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+    
+    .p--list{
+        margin-bottom: 17px;
+    }
+}
+
+
 
 
 .list{
