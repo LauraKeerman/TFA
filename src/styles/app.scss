@@ -768,6 +768,27 @@ summary::marker{
 }
 
 
+.footer__cs{
+    margin: 0;
+    max-width: 100%;
+
+    padding-left: 34px;
+    padding-right: 24px;
+
+    padding-bottom: 119px;
+    padding-top: 119px;
+}
+
+.footer__ul{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+
 /*DEVICES*/
 @media(min-width: 470px){
     .section__img--circle {
@@ -987,7 +1008,7 @@ summary::marker{
 
 
     .section__cs{
-        max-width: 800px;
+        max-width: 700px;
     
         .title--big{
             margin-bottom: 40px;
@@ -1040,7 +1061,7 @@ summary::marker{
         max-width: 100%;
 
         h2, p, ul{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1067,7 +1088,7 @@ summary::marker{
         }
 
         p, ul{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1108,7 +1129,7 @@ summary::marker{
         }
 
         p, ul{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1149,7 +1170,7 @@ summary::marker{
         max-width: 100%;
 
         h2, h3, p, figure, ul{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1202,7 +1223,7 @@ summary::marker{
         }
 
         p, h3, figure{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1234,7 +1255,7 @@ summary::marker{
         }
 
         h2, p, ul{
-            max-width: 800px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1243,12 +1264,20 @@ summary::marker{
     .footer__cs{
         margin: 0;
         max-width: 100%;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        padding-bottom: 120px;
     }
 
     .footer__ul{
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
