@@ -1,3 +1,13 @@
+"use strict";
+
+//Copyright
+let date = new Date();
+let year = date.getFullYear();
+
+let yr = document.querySelector(".copyright");
+yr.innerText = year;
+
+
 import gsap from 'gsap';
 
 import ScrollTrigger from 'gsap/ScrollTrigger'; //importer le gsap 

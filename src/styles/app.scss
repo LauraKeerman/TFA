@@ -218,6 +218,15 @@ img{
     padding-right: 34px;
 }
 
+.credits{
+    text-align: center;
+    padding-top: 119px;
+
+    .link:hover{
+        border-bottom: 1px solid var(--c-primary);
+    }
+}
+
 
 .section__intro{
     margin-top: 0;
@@ -595,7 +604,7 @@ img{
 
 
 .section__cs--identite{
-    .p--list, .list li{
+    .p--list, .list__el{
         margin-bottom: 8.5px;
     } 
 
@@ -673,9 +682,8 @@ img{
 
 .list{
     list-style-position: outside;
-    margin-left: 17px;
 
-    li{
+    &__el{
         margin-bottom: 17px;
     }
 }
@@ -773,7 +781,7 @@ summary::marker{
     max-width: 100%;
 
     padding-left: 34px;
-    padding-right: 24px;
+    padding-right: 34px;
 
     padding-bottom: 119px;
     padding-top: 119px;
@@ -784,8 +792,8 @@ summary::marker{
     margin-left: auto;
     margin-right: auto;
 
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 51px;
+    padding-right: 51px;
 }
 
 
@@ -1009,6 +1017,8 @@ summary::marker{
 
     .section__cs{
         max-width: 700px;
+        padding-left: 0;
+        padding-right: 0;
     
         .title--big{
             margin-bottom: 40px;
@@ -1035,7 +1045,7 @@ summary::marker{
             margin-bottom: 12.5px;
         }
 
-        .list li{
+        .list__el{
             margin-left: 17px;
         }
 
@@ -1099,9 +1109,6 @@ summary::marker{
     .section__cs--entretiens {
         padding-bottom: 120px;
     
-        padding-left: 40px;
-        padding-right: 40px;
-    
         p{
             margin-top: 120px;
         }
@@ -1139,12 +1146,12 @@ summary::marker{
             font-family: "PP Neue Montreal Bold";
         }
 
-        .list li{
-            margin-left: 17px;
-        }
-
         .list{
             margin-bottom: 60px;
+
+            &__el{
+                margin-left: 17px;
+            }
         }
     }
 
@@ -1194,7 +1201,7 @@ summary::marker{
 
 
     .section__cs--identite{
-        .p--list, .list li{
+        .p--list, .list__el{
             margin-bottom: 12.5px;
         } 
     
@@ -1265,8 +1272,6 @@ summary::marker{
         margin: 0;
         max-width: 100%;
 
-        padding-left: 40px;
-        padding-right: 40px;
 
         padding-bottom: 120px;
     }
@@ -1275,9 +1280,6 @@ summary::marker{
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
