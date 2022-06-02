@@ -545,7 +545,7 @@ img{
         border-radius: 12px;
     }
 
-    .slideshow__container{
+    /*.slideshow__container{
         position: relative;
         margin: auto;
         width: 100%;
@@ -564,10 +564,10 @@ img{
     .slideshow__prev, .slideshow__next{
         top: 77%;
         color: var(--c-primary);
-    }
+    }*/
 }
 
-.slideshow__prev, .slideshow__next{
+/*.slideshow__prev, .slideshow__next{
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -591,7 +591,7 @@ img{
 
 .hide{
     display: none;
-}
+}*/
 
 
 .section__cs--identite{
@@ -653,8 +653,6 @@ img{
         margin-bottom: 17px;
     }
 }
-
-
 
 
 
@@ -798,6 +796,17 @@ summary::marker{
         font-family: "PP Neue Montreal Medium";
     }
 
+    .p--list{
+        margin-bottom: 12.5px;
+    } 
+
+
+    /*IMG*/
+    .img__caption{
+        font-size: 20px;
+        padding-top: 12.5px;
+        margin-bottom: 60px;
+    }
 
     /*SECTIONS*/
     .header{
@@ -968,7 +977,275 @@ summary::marker{
         margin-left: 40px;
     }
 
+
+    /*CASE STUDY*/
+    .header__cs, .footer__cs{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+
+    .section__cs{
+        max-width: 800px;
+    
+        .title--big{
+            margin-bottom: 40px;
+        }
+    
+        .title--medium{
+            margin-bottom: 25px;
+        }
+    
+        .p--big, p{
+            margin-bottom: 40px;
+        }
+        
+        .p--big{
+            font-size: 20px;
+            font-family: "PP Neue Montreal Bold";
+        }
+
+        .p--medium{
+            font-family: "PP Neue Montreal Medium"; 
+        }
+
+        .p--list{
+            margin-bottom: 12.5px;
+        }
+
+        .list li{
+            margin-left: 17px;
+        }
+
+        .img__caption{
+            font-size: 16px;
+        }
+    }
+
+
+
+    .section__cs--intro{
+        margin-top: 120px;
+    }
+
+
+
+    .section__cs--professionnels{
+        margin-bottom: 0;
+        background-color: #ff8182;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        border-radius: 25px 0 25px 0;
+        max-width: 100%;
+
+        h2, p, ul{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+
+    .section__cs--white{
+        max-width: 100%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    
+        margin-bottom: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    
+        border-radius: 25px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    
+        .p--big{
+            margin-top: 0;
+        }
+
+        p, ul{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+
+    .section__cs--entretiens {
+        padding-bottom: 120px;
+    
+        padding-left: 40px;
+        padding-right: 40px;
+    
+        p{
+            margin-top: 120px;
+        }
+    }
+
+
+
+    .section__cs--pivot{
+        .p--big{
+            margin-top: 60px;
+        }
+    }
+
+
+
+    .section__cs--pivot-conclu{
+        padding-right: 34px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    
+        border-radius: 0 25px 0 25px;
+    
+        .p--big{
+            margin-bottom: 34px;
+        }
+
+        p, ul{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .p--big{
+            font-size: 20px;
+            font-family: "PP Neue Montreal Bold";
+        }
+
+        .list li{
+            margin-left: 17px;
+        }
+
+        .list{
+            margin-bottom: 60px;
+        }
+    }
+
+
+
+    .section__cs--stat{
+        .list{
+            margin-bottom: 60px;
+        }
+
+        .content__scroll{
+            margin-bottom: 60px;
+        }
+    }
+
+
+
+    .section__cs--contenuApp{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        max-width: 100%;
+
+        h2, h3, p, figure, ul{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+    
+        .p--list{
+            margin-top: 60px;
+        }
+    
+        .list{
+            margin-bottom: 60px;
+        }
+    }
+
+
+    .section__cs--mvp{
+        .img__content-scroll{
+            height: 80vh;
+        }
+    }
+
+
+    .section__cs--identite{
+        .p--list, .list li{
+            margin-bottom: 12.5px;
+        } 
+    
+        .title--little{
+            margin-top: 60px;
+        }
+
+        .img__caption{
+            margin-bottom: 120px;
+        }
+    }
+    
+
+    .section__cs--identite2{    
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        max-width: 100%;
+
+    
+        .content__scroll .img__caption{
+            margin-bottom: 20px;
+        }
+
+        p, h3, figure{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img__caption{
+            margin-bottom: 80px;
+        }
+    }
+
+
+    .section__cs--prototype{
+        .content__scroll .img__content{
+            height: 75vh;
+        }
+    
+        .img__caption{
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .section__cs--ameliorer{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        max-width: 100%;
+        
+        .p--list{
+            margin-bottom: 20px;
+        }
+
+        h2, p, ul{
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer__cs{
+        margin: 0;
+    }
 }
+
+
 
 @media(min-width: 768px) and (max-width: 810px){
     .btn-container {
