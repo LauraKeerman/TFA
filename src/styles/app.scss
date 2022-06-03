@@ -792,8 +792,8 @@ summary::marker{
     margin-left: auto;
     margin-right: auto;
 
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -1280,6 +1280,10 @@ summary::marker{
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+
+        padding-left: 51px;
+        padding-right: 51px;
+
     }
 }
 
