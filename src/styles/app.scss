@@ -96,7 +96,7 @@ body{
 
 
 
-/*IMG / ICONS / LOGO*/
+/*IMG / VIDEO / ICONS / LOGO*/
 img{
     overflow: hidden; //même si l'img sort du viewport, le scroll ne s'affiche pas 
 }
@@ -133,6 +133,12 @@ img{
 
 .img--features{
     width: 300px;
+}
+
+.video {
+    border: none;
+    width: 100%;
+    height: 400px;
 }
 
 /*case-study*/
@@ -506,7 +512,7 @@ img{
 
 
 .section__cs--pivot-conclu{
-    background-color: #FFE2E2;
+    background-color: #ff79c4;
     margin: 0;
     padding-left: 34px;
     padding-right: 34px;
@@ -518,10 +524,14 @@ img{
     .p--big{
         margin-bottom: 34px;
     }
+
+    .list{
+        margin-bottom: 0;
+    }
 }
 
 
-.section__cs--stat{
+.section__cs--contenuApp{
     .list{
         margin-bottom: 51px;
     }
@@ -531,8 +541,8 @@ img{
     }
 }
 
-.section__cs--contenuApp{
-    background-color: #ff79c4;
+.section__cs--stat{
+    background-color: #FFE2E2;
     margin: 0;
     padding-left: 34px;
     padding-right: 34px;
@@ -557,34 +567,35 @@ img{
 
 .section__cs--mvp{
     .img__content-scroll{
-        height: 60vh;
+        height: 45vh;
         border: 1px solid var(--c-primary);
         border-radius: 12px;
     }
-
-    /*.slideshow__container{
-        position: relative;
-        margin: auto;
-        width: 100%;
-    }
-
-    .slideshow__slides{
-        background: linear-gradient(90deg, rgba(255,95,97,1) 0%, rgba(255,79,178,1) 100%);
-        padding: 17px;
-        border-radius: 25px;
-
-        p{
-            margin-bottom: 85px;
-        }
-    }
-
-    .slideshow__prev, .slideshow__next{
-        top: 77%;
-        color: var(--c-primary);
-    }*/
 }
 
-/*.slideshow__prev, .slideshow__next{
+.slideshow__container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.slideshow__slides{
+    background: linear-gradient(90deg, rgba(255,95,97,1) 0%, rgba(255,79,178,1) 100%);
+    padding: 17px;
+    border-radius: 25px;
+
+    p{
+        margin-bottom: 85px;
+    }
+}
+
+.slideshow__prev, .slideshow__next{
+    top: 50%;
+    color: var(--c-primary);
+}
+
+
+.slideshow__prev, .slideshow__next{
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -599,16 +610,20 @@ img{
 }
 
 .slideshow__prev{
-    left: 2px;
+    left: 15px;
 }
 
 .slideshow__next{
-    right: 2px;
+    right: 15px;
+}
+
+.slideshow__prev:hover, .slideshow__next:hover{
+    color: var(--c-bg-pink);
 }
 
 .hide{
     display: none;
-}*/
+}
 
 
 .section__cs--identite{
@@ -1128,18 +1143,15 @@ summary::marker{
             font-family: "PP Neue Montreal Bold";
         }
 
-        .list{
-            margin-bottom: 60px;
-
-            &__el{
-                margin-left: 17px;
-            }
+        .list__el{
+            margin-left: 17px;
         }
+
     }
 
 
 
-    .section__cs--stat{
+    .section__cs--contenuApp{
         .list{
             margin-bottom: 60px;
         }
@@ -1151,7 +1163,7 @@ summary::marker{
 
 
 
-    .section__cs--contenuApp{
+    .section__cs--stat{
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 120px;
@@ -1177,7 +1189,7 @@ summary::marker{
 
     .section__cs--mvp{
         .img__content-scroll{
-            height: 80vh;
+            height: 50vh;
         }
     }
 
