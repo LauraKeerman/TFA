@@ -209,7 +209,7 @@ if(window.matchMedia('(max-width: 767px)').matches){
 }
 
 
-const gsapExist12 = document.querySelector(".callToAction2-left");
+/*const gsapExist12 = document.querySelector(".callToAction2-left");
 const gsapExist13 = document.querySelector(".callToAction2-right");
 
 if(window.matchMedia('(max-width: 767px)').matches){
@@ -234,4 +234,4 @@ if(window.matchMedia('(max-width: 767px)').matches){
             }
         });
     }
-}
+}*/
